@@ -1,3 +1,7 @@
+body {
+    padding-top: 80px; /* ajuste conforme a altura da navbar */
+}
+
 
 .navbar {
   background-color: #ffffff;
@@ -14,9 +18,9 @@
 }
 
 .logo-img {
-    width: 48px;
-    height: auto;
-    object-fit: contain;
+    width: 48px !important;
+    height: auto !important;
+    object-fit: contain !important;
 }
 
 
@@ -37,32 +41,28 @@
 
 /* efeito de tempo */
 .navbar-nav .nav-link {
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease !important;
 }
 
 /* efeito flutuação nos links */
 .navbar-nav .nav-link:hover {
-    transform: translateY(-3px); /* sobe um pouquinho */
-    color: #0b37bc; /* muda a cor no hover */
+    transform: translateY(-3px) !important; /* sobe um pouquinho */
+    color: #0b37bc !important; /* muda a cor no hover */
 }
 
 /* efeito de tempo*/
 .navbar-toggler {
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease !important;
 }
 
 /* efeito flutuação no menu burguer */
 .navbar-toggler:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) !important;
 }
 
 /* sombra ao passar o mouse dps da flutuação */
 .navbar-nav .nav-link:hover {
-    transform: translateY(-3px);
-    color: #0b37bc;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transform: translateY(-3px) !important;
+    color: #0b37bc !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
 }
-
-
-
-
