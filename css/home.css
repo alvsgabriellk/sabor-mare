@@ -1,0 +1,69 @@
+
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 15px 15px black !important;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: rgb(45, 111, 241) !important;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(45, 111, 241) !important;
+}
+
+.logo-img {
+    width: 48px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* tirando a borda preta do botao menu */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    border-color: rgb(45, 111, 241) !important; /* azul */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%232d6ff1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* efeito de tempo */
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* efeito flutuação nos links */
+.navbar-nav .nav-link:hover {
+    transform: translateY(-3px); /* sobe um pouquinho */
+    color: #0b37bc; /* muda a cor no hover */
+}
+
+/* efeito de tempo*/
+.navbar-toggler {
+    transition: transform 0.2s ease;
+}
+
+/* efeito flutuação no menu burguer */
+.navbar-toggler:hover {
+    transform: translateY(-3px);
+}
+
+/* sombra ao passar o mouse dps da flutuação */
+.navbar-nav .nav-link:hover {
+    transform: translateY(-3px);
+    color: #0b37bc;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+
+

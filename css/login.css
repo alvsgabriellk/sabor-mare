@@ -1,3 +1,3 @@
-section .row {
-    border-radius: 700px;
+.container {
+    border-radius: 100px;
 }
