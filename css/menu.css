@@ -1,0 +1,81 @@
+body {
+    background-color: rgba(45, 110, 241, 0.256) !important;
+}
+
+.menu-header {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Título com linhas laterais */
+.menu-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+}
+
+/* Subtítulo */
+.menu-subtitle {
+    margin-top: 15px;
+    font-size: 1rem;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    border-radius: 15px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+
+/* REMOVE O HOVER DO ITEM ATIVO */
+.nav-pills .nav-link.active:hover {
+    background-color: rgba(52, 52, 225, 0.812) !important;
+    color: white !important;
+}
+
+/* HOVER PARA OS OUTROS ITENS */
+.nav-pills .nav-link:not(.active):hover {
+    background-color: rgb(21, 132, 159) !important;
+    color: var(--hover-text) !important;
+}
+
+/* ESTILO BASE DOS BOTÕES */
+.nav-pills .nav-link {
+    border-radius: 25px;
+    transition: 0.2s;
+}
+
+
+.featured-product-card {
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ .featured-product-image {
+     height: 100px;
+     background-color: #f1f1f1;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .featured-product-details {
+    padding: 20px;
+    
+ }
+
+ .cards-cardapios {
+    display: flex;
+    content: space-between;
+    padding: 10px;
+ }
