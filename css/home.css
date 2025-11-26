@@ -133,9 +133,6 @@ body {
     }
 
 
-
-    
-
 .separar {
     padding-top: 60px;
 }
@@ -153,3 +150,8 @@ body {
     transform: translateY(-2px);
     transition: all 0.3s ease-in-out;
 }
+
+.div-separar {
+    margin-bottom: 30px;
+}
+
