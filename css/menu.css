@@ -1,13 +1,16 @@
+/* Definição de Variáveis de Cor (Opcional, mas útil) */
+:root {
+    --card-background: #ffffff; /* Fundo do card branco ou cinza claro */
+    --price-color: #007bff; /* Cor do preço (pode ser azul do botão) */
+    --text-light: #6c757d; /* Cor do texto de descrição */
+    --hover-text: #ffffff; 
+}
+
 body {
     background-color: rgba(45, 110, 241, 0.256) !important;
 }
 
-.menu-header {
-    padding: 80px 0;
-    text-align: center;
-}
-
-/* Título com linhas laterais */
+/* ESTILOS DE TÍTULO */
 .menu-title-wrapper {
     display: flex;
     align-items: center;
@@ -18,27 +21,52 @@ body {
 .line {
     width: 60px;
     height: 2px;
+    background-color: #007bff; /* Cor para a linha */
     display: inline-block;
 }
 
-/* Subtítulo */
+.menu-title {
+    color: #343a40;
+}
+
 .menu-subtitle {
     margin-top: 15px;
     font-size: 1rem;
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px; /* Adiciona espaço abaixo do subtítulo */
 }
 
-.nav-link {
-    border-radius: 15px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+/* ESTILOS DOS BOTÕES DE NAVEGAÇÃO (TABS) */
+
+/* 🟢 CORREÇÃO: Garante espaçamento entre os botões da lista */
+.nav-pills {
+    /* Use gap para espaçamento consistente entre os botões flexíveis */
+    gap: 15px; /* Aumenta o espaçamento entre os botões */
+    flex-wrap: wrap; /* Garante que os botões quebrem a linha se não houver espaço */
+    justify-content: center; /* Centraliza os botões */
+    margin-bottom: 20px; /* Adiciona um pouco de espaço abaixo dos botões, antes dos cards */
+}
+
+/* 🟢 CORREÇÃO: Remove estilos problemáticos do .nav-item */
+.nav-item {
+    /* Remove qualquer padding/margin/border-radius que possa estar comprimindo */
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important; 
 }
 
 
-/* REMOVE O HOVER DO ITEM ATIVO */
-.nav-pills .nav-link.active:hover {
+.nav-pills .nav-link {
+    border-radius: 25px;
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.05); /* Fundo sutil para os botões inativos */
+    color: #343a40; /* Cor do texto dos botões inativos */
+    padding: 8px 16px; /* Padding interno do botão */
+}
+
+.nav-pills .nav-link.active {
     background-color: rgba(52, 52, 225, 0.812) !important;
     color: white !important;
 }
@@ -49,33 +77,99 @@ body {
     color: var(--hover-text) !important;
 }
 
-/* ESTILO BASE DOS BOTÕES */
-.nav-pills .nav-link {
-    border-radius: 25px;
-    transition: 0.2s;
+
+/* ---------------------------------------------------------------- */
+/* --- INÍCIO: ESTILOS PARA OS CARDS (Layout Lateral e Grid) --- */
+/* ---------------------------------------------------------------- */
+
+/* 1. CONTAINER DA GRADE (CRIA AS 2 COLUNAS) */
+.cards-cardapios.menu-grid {
+    display: grid;
+    /* Duas colunas de largura igual, com espaçamento */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px 30px; /* Espaçamento entre linhas e colunas */
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* RESPONSIVIDADE PARA 1 COLUNA EM TELAS PEQUENAS */
+@media (max-width: 992px) { /* Em tablets e celulares, quebra para 1 coluna */
+    .cards-cardapios.menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-.featured-product-card {
-     border: 1px solid #ddd;
-     border-radius: 8px;
-     overflow: hidden;
- }
+/* 2. ESTILO DO CARD INDIVIDUAL (LAYOULT LATERAL: FOTO ESQUERDA, TEXTO DIREITA) */
+.menu-item-card {
+    display: flex; /* ATIVA O FLEXBOX PARA LAYOUT LATERAL */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    background-color: var(--card-background); 
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
 
- .featured-product-image {
-     height: 100px;
-     background-color: #f1f1f1;
-     background-size: cover;
-     background-position: center;
- }
+.menu-item-card:hover {
+    transform: translateY(-5px);
+}
 
- .featured-product-details {
-    padding: 20px;
-    
- }
+.item-image {
+    flex-shrink: 0; /* Impede que a foto encolha */
+    width: 100px; 
+    height: 100px;
+    margin-right: 15px; 
+    border-radius: 4px;
+    overflow: hidden;
+}
 
- .cards-cardapios {
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.item-details {
+    flex-grow: 1; /* Ocupa o espaço restante */
+}
+
+/* Estilos de conteúdo dentro do card */
+.item-header {
     display: flex;
-    content: space-between;
-    padding: 10px;
- }
+    align-items: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap; 
+}
+
+.item-header h3 {
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-bottom: 0;
+    color: #343a40;
+}
+
+.price {
+    color: var(--price-color);
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.tag {
+    font-size: 0.75em;
+    background-color: #28a745; /* Cor verde para destaque */
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 0.95em;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------- */
+/* --- FIM: ESTILOS PARA OS CARDS --- */
+/* ---------------------------------------------------------------- */
