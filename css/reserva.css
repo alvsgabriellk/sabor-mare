@@ -1,5 +1,4 @@
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     padding: 0;
     margin: 0;
@@ -10,27 +9,22 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width:70vh;
-    box-shadow: 0px 2px 6px rgba(211, 207, 207, 0.863);
-    margin-top: 3vh;
+    width:80vh;
+    box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.2);
+    margin-top: 10vh;
+    background-color: white;
+
 
 }
 .formular{
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
-
-
-}
-h1{
-    font-size:3vh;
-
 }
 .acima{
     font-size: 2vh;
     margin-left: 2%;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    color: rgb(181, 146, 95);
 }
 .nome{
     height: 3vh;
@@ -51,30 +45,32 @@ h1{
 }
 select{
     width: 20vh;
-    height: 2vh;
-    background-color: rgba(177, 168, 168, 0.199);
+    height: 3vh;
+    background-color: white;
     border-radius: 12px;
-    border: 0px;
-    box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
+    border: 1px solid rgba(128, 128, 128, 0.151);
 }
+
 .area-grande{
     width: 40vh;
     height: 10vh;
     background-color: rgba(177, 168, 168, 0.199);
     border-radius: 12px;
     border: 0px;
-    box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
+    box-shadow: 1px 2px 3px rgb(196, 194, 194);
 }
 button{
     height: 5vh;
     width: 20vh;
-    border-radius: 12px;
-    border: none;
     box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
     margin-left: 10px;
+    border-style: none  ;
 }
 button:hover{
-    background-color: rgba(177, 168, 168, 0.075) ;
+    background-color: rgba(45, 110, 241) ;
+    box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
+    border-radius: 10px;
+
 }
 .area-recentes{
     display: flex;
@@ -83,48 +79,68 @@ button:hover{
     justify-content: center;
     box-shadow: 0px 2px 6px rgba(128, 128, 128, 0.5);
     border-radius: 20px;
-    width: 70vh;
-    height: 50vh;
+    width: 80vh;
+    height: 60vh;
+    background-color: white;
 }   
 .titulo{
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.671);
+    font-weight: bold;
+    color: rgb(45, 111, 241)
 }
 .boxes{
+    margin-top: 3vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4vh;
 }
-.card{
-    display: flex;
-    justify-content: space-between;
-    width: 50vh;
-    align-items: center;
+.cards{
+    width: 60vh;
     box-shadow: 0px 2px 6px rgba(128, 128, 128, 0.5);
     border-radius: 12px;
     height: 9vh;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .esquerdacard{
-    margin-left: 2vh;
+    color: rgb(181, 146, 95);
+    font-size: 15px;
 
 }
 .direitacard{
-    margin-right: 3vh;
-    background-color: rgba(44, 44, 44, 0.521);
-    width: 9vh;
+    color: rgb(45, 111, 241);
+    background-color: rgba(181, 147, 95, 0.349);
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    color: white;
-    font-weight: 800;
-
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
+
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2vh;
+    background-color: rgba(45, 110, 241, 0.256) !important;
 }
 
+.azultitulo{
+    color: rgb(45, 111, 241);
+}
+.subtit{
+    color: rgba(45, 110, 240, 0.575);
+}
+.botoes{
+    display: flex;
+    gap: 3vh;
+    
+}
+p{
+    opacity: 60%;
+}
+.pessoas{
+    margin: 0px 7px 8px;
+}
