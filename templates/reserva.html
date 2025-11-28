@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/reserva.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/logins/login-3/assets/css/login-3.css">
 </head>
 <body>
     <!--INICIO DO NAVBAR-->
@@ -32,7 +34,7 @@
                     <a class="nav-link" href="menu.html">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Chefs</a>
+                    <a class="nav-link" href="chefs.html">Chefs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reserva.html">Reserva</a>
@@ -53,12 +55,12 @@
 
     <div class="area-forms">
     <form class="formular">
-        <h1>Faça sua reserva:</h1>
-        <p>Preencha os dados:</p><br>
-        <label class="acima">Nome Completo</label>
-        <input type="text" class="nome" placeholder="Seu nome Completo">
+        <h1 class="azultitulo">Faça sua reserva:</h1>
+        <p class="subtit">Preencha os dados:</p>
+        <label class="acima">Nome</label>
+        <input type="text" class="form-control" placeholder="Seu nome">
         <label class="acima">Número telefone/celular</label>
-        <input type="number" class="numero" placeholder="(xx)x xxxx-xxxx">
+        <input type="number" class="form-control" placeholder="(xx)x xxxx-xxxx">
         <label class="acima">Pessoas</label>
         <select>
             <option>1</option>
@@ -71,7 +73,7 @@
             <option>8</option>
         </select>
         <label class="acima">Alguma observação necessária(opcional)</label>
-        <input type="text" class="area-grande" placeholder="Digite Aqui"><br>
+        <input type="text" class="form-control" placeholder="Digite Aqui"><br>
         <div class="botoes">
         <button type="submit">Cancelar</button>
         <button type="submit">Enviar</button>
@@ -83,31 +85,31 @@
         <h1>Reservas Recentes</h1>
     </div>
     <div class="boxes">
-        <div class="card">
+        <div class="cards">
             <div class="esquerdacard">
                 <h1>Cauã Alves</h1>
                 <p>21/11/24 18:30</p>
             </div>
             <div class="direitacard">
-                <p>3 pessoas</p>
+                <p class="pessoas">3 pessoas</p>
             </div>
         </div>
-         <div class="card">
+         <div class="cards">
             <div class="esquerdacard">
                 <h1>Michael neto</h1>
                 <p>21/11/24 19:00</p>
             </div>
             <div class="direitacard">
-                <p>2 pessoas</p>
+                <p class="pessoas">2 pessoas</p>
             </div>
         </div>
-         <div class="card">
+         <div class="cards">
             <div class="esquerdacard">
                 <h1>Francisco Bufalo</h1>
                 <p>21/11/24 20:00</p>
             </div>
             <div class="direitacard">
-                <p>7 pessoas</p>
+                <p class="pessoas">7 pessoas</p>
             </div>
         </div>
     </div>

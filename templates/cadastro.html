@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadaslogin.css">
+
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/logins/login-3/assets/css/login-3.css">
 </head>
 <body>
  <!-- Bootstrap 5 -->
  <!-- https://getbootstrap.com/docs/5.3/forms/overview/     // Link do código base-->
-<section class="p-3 p-md-4 p-xl-5">
+<section class="p-3 p-md-4 p-xl-5 cadastro">
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 bsb-tpl-bg-platinum">
         <div class="d-flex flex-column justify-content-between h-100 p-3 p-md-4 p-xl-5">
-          <h3 class="m-0">Bem-vindo!</h3>
+          <h3 class="m-0 title-section">Bem-vindo!</h3>
           <img class="img-fluid rounded mx-auto my-4" loading="lazy" src="../static/img/sabor da maré.png" width="350" height="80" alt="BootstrapBrain Logo">
         </div>
       </div>
@@ -24,7 +26,7 @@
           <div class="row">
             <div class="col-12">
               <div class="mb-5">
-                <h3>Cadastre-se</h3>
+                <h3 class="title-section">Cadastre-se</h3>
               </div>
             </div>
           </div>
@@ -32,28 +34,28 @@
   <div class="row gy-3 gy-md-4 overflow-hidden">
 
     <div class="col-12">
-      <label for="nome" class="form-label">Nome <span class="text-danger">*</span></label>
+      <label for="nome" class="form-label form-text">Nome <span class="text-danger">*</span></label>
       <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome" required>
     </div>
 
     <div class="col-12">
-      <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+      <label for="email" class="form-label form-text">Email <span class="text-danger">*</span></label>
       <input type="email" class="form-control" name="email" id="email" placeholder="nome@exemplo.com" required>
     </div>
 
     <div class="col-12">
-      <label for="senha" class="form-label">Senha <span class="text-danger">*</span></label>
+      <label for="senha" class="form-label form-text">Senha <span class="text-danger">*</span></label>
       <input type="password" class="form-control" name="senha" id="senha" required>
     </div>
 
     <div class="col-12">
-      <label for="confirmar_senha" class="form-label">Repita sua senha <span class="text-danger">*</span></label>
+      <label for="confirmar_senha" class="form-label form-text">Repita sua senha <span class="text-danger">*</span></label>
       <input type="password" class="form-control" name="confirmar_senha" id="confirmar_senha" required>
     </div>
 
     <div class="col-12">
       <div class="d-grid">
-        <button class="btn bsb-btn-xl btn-primary" type="submit">Cadastrar</button>
+        <button class="btn bsb-btn-xl btn-primary" type="submit" style="background-color: rgb(45, 111, 241) !important;">Cadastrar</button>
       </div>
     </div>
 
