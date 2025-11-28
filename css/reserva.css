@@ -125,6 +125,7 @@ body{
     justify-content: center;
     gap: 2vh;
     background-color: rgba(45, 110, 241, 0.256) !important;
+    width: 100%;
 }
 
 .azultitulo{
@@ -143,4 +144,7 @@ p{
 }
 .pessoas{
     margin: 0px 7px 8px;
+}
+footer{
+    width: 100%;
 }
