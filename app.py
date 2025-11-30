@@ -8,32 +8,11 @@ app = Flask(__name__)
 def custom_css(css):
     return send_from_directory('css', css)
 
-# INICIO DE PÁGINAS
+
+
 @app.route("/home")
 def home():
     return render_template("home.html")
-
-@app.route("/sobre")
-def sobre():
-    return render_template("sobre.html")
-
-@app.route("/menu")
-def menu():
-    return render_template("menu.html")
-
-@app.route("/chefs")
-def chefs():
-    return render_template("chefs.html")
-
-@app.route("/reserva")
-def reserva():
-    return render_template("reserva.html")
-
-@app.route("/contato")
-def contato():
-    return render_template("contato.html")
-
-# FIM DE PÁGINAS
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
