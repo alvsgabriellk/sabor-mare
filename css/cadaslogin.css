@@ -48,6 +48,17 @@ body {
     color: rgb(45, 111, 241) !important;
 }
 
+.btn-primary {
+    background-color: rgb(45, 111, 241) !important;
+    border-color: rgb(45, 111, 241) !important;
+    transition: all 0.3s ease !important; 
+}
+
+.btn-primary:hover {
+    background-color: #0b37bc !important; /* Azul um pouco mais escuro no hover */
+    border-color: #0b37bc !important;
+}
+
 @media (max-width: 600px) {
     .bsb-tpl-bg-platinum {
     border-radius: 12px 12px 0 0 !important;

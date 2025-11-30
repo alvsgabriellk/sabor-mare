@@ -3,16 +3,12 @@ body {
 }
 
 /* INICIO DO CÓDIGO DO HERO */
-.hero-section {
-    background-color: transparent;
-    min-height: 500px;
-    box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.2);
-}
+
 
 .hero-section {
     /* Adiciona a imagem de fundo */
     background-image: url('../static/img/fundo1.jpg');
-    
+    background-color: transparent;
     /* Configurações para a imagem */
     background-size: cover;       /* Garante que a imagem cubra toda a seção */
     background-position: center;  /* Centraliza a imagem */
@@ -20,6 +16,7 @@ body {
     min-height: 600px;
     padding-top: 80px;
     position: relative;
+    box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.2);
 }
 
 .text-blue {

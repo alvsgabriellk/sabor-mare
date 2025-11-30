@@ -42,12 +42,6 @@
     font-weight: 500 !important;
 }
 
-/* efeito flutuação nos links */
-.navbar-nav .nav-link:hover {
-    transform: translateY(-3px) !important; /* sobe um pouquinho */
-    color: #0b37bc !important; /* muda a cor no hover */
-}
-
 /* efeito de tempo*/
 .navbar-toggler {
     transition: transform 0.2s ease !important;

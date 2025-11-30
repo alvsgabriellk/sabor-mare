@@ -18,13 +18,6 @@ body {
     gap: 15px;
 }
 
-.line {
-    width: 60px;
-    height: 2px;
-    background-color: #007bff; /* Cor para a linha */
-    display: inline-block;
-}
-
 .menu-title {
     color: #343a40;
 }
