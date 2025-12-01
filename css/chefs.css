@@ -113,9 +113,9 @@ p{
 .secao{
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     gap: 2vh;
     margin-bottom: 10%;
-
 }
 
 
